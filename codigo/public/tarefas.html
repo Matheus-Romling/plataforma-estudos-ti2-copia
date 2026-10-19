@@ -82,7 +82,7 @@
 
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
-            <a href="/professor/home.html" class="nav-link link-body-emphasis">
+            <a href="/professor/home.html" data-pagina-perfil="home" class="nav-link link-body-emphasis">
               <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
                 <use href="#home"></use>
               </svg>
@@ -97,7 +97,7 @@
               Tarefas
             </a>
           </li>
-          <li>
+          <li data-menu-professor>
             <a href="/professor/turmas.html" class="nav-link link-body-emphasis">
               <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
                 <use href="#table"></use>
@@ -106,7 +106,7 @@
             </a>
           </li>
           <li>
-            <a href="/professor/calendario.html" class="nav-link link-body-emphasis">
+            <a href="/professor/calendario.html" data-pagina-perfil="calendario" class="nav-link link-body-emphasis">
               <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
                 <use href="#grid"></use>
               </svg>
@@ -114,7 +114,7 @@
             </a>
           </li>
           <li>
-            <a href="/professor/perfil.html" class="nav-link link-body-emphasis">
+            <a href="/professor/perfil.html" data-pagina-perfil="perfil" class="nav-link link-body-emphasis">
               <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
                 <use href="#people-circle"></use>
               </svg>
@@ -140,7 +140,7 @@
             <strong id="nomeUsuario">Usuário</strong>
           </a>
           <ul class="dropdown-menu text-small shadow">
-            <li><a class="dropdown-item" href="/professor/perfil.html">Perfil</a></li>
+            <li><a class="dropdown-item" href="/professor/perfil.html" data-pagina-perfil="perfil">Perfil</a></li>
             <li><hr class="dropdown-divider" /></li>
             <li><a class="dropdown-item" href="/index.html" id="sairUsuario">Sair</a></li>
           </ul>

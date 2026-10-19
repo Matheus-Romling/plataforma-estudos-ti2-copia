@@ -362,6 +362,14 @@ if (usuarioAtualTarefas) {
   const nomeUsuario = usuarioAtualTarefas.nome || usuarioAtualTarefas.usuario || 'Usuário';
   document.getElementById('nomeUsuario').textContent = nomeUsuario;
   document.getElementById('avatarUsuario').textContent = nomeUsuario.slice(0, 1).toUpperCase();
+  if (['aluno', 'professor'].includes(usuarioAtualTarefas.funcao)) {
+    document.querySelectorAll('[data-pagina-perfil]').forEach((link) => {
+      link.href = `/${usuarioAtualTarefas.funcao}/${link.dataset.paginaPerfil}.html`;
+    });
+    document.querySelectorAll('[data-menu-professor]').forEach((item) => {
+      item.classList.toggle('d-none', usuarioAtualTarefas.funcao !== 'professor');
+    });
+  }
 }
 document.getElementById('sairUsuario').addEventListener('click', (e) => {
   e.preventDefault();

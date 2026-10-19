@@ -34,6 +34,6 @@ Abra `http://localhost:3000/`. A loja está em `/loja.html`, o gerenciamento de 
 
 O servidor atende ao login, às coleções REST do banco JSON e à API da loja na mesma porta. O banco fica fora de `public`; os dados são acessados pelas APIs. A variável de ambiente `PORT` permite alterar a porta.
 
-As páginas vazias em `aluno/` e `professor/` representam funcionalidades ainda em desenvolvimento e foram mantidas porque os menus apontam para elas. A página de tarefas do professor encaminha para o gerenciamento compartilhado.
+As páginas vazias em `aluno/` e `professor/` representam funcionalidades ainda em desenvolvimento e foram mantidas porque os menus apontam para elas. As páginas de tarefas desses perfis encaminham para `/tarefas.html`, também acessada diretamente pelos menus das páginas iniciais.
 
 As versões antigas, arquivos de teste, exemplos do template e cópias duplicadas foram removidos desta cópia local. A documentação acadêmica continua em `docs/`, e os modelos de documentos continuam em `templates/`, na raiz.
