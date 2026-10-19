@@ -1,0 +1,207 @@
+/* Estilos exclusivos de Tarefas, usando os tokens de cores do Quorbe. */
+.tarefas-page {
+  --bs-body-bg: var(--cor-fundo);
+  --bs-body-color: var(--cor-texto);
+  --bs-border-color: var(--cor-borda);
+  --bs-secondary-color: color-mix(in srgb, var(--cor-texto) 65%, var(--cor-fundo));
+  --bs-tertiary-bg: var(--cor-superficie);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.tarefas-page .sidebar {
+  width: 260px;
+  border-right: 1px solid var(--cor-borda);
+  overflow-y: auto;
+}
+
+.tarefas-page .sidebar .nav-link {
+  padding: .78rem .9rem;
+  border-radius: 12px;
+  font-weight: 550;
+}
+
+.tarefas-page .sidebar .nav-link.active {
+  color: var(--cor-sobre-primaria) !important;
+}
+
+.tarefas-page .tarefas-avatar {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  background: var(--cor-primaria);
+  color: var(--cor-sobre-primaria);
+  font-weight: 700;
+}
+
+.tarefas-page .tarefas-conteudo {
+  min-width: 0;
+}
+
+.tarefas-page .caixa-destaque-tarefas {
+  display: inline-block;
+  min-width: 180px;
+  padding: 1.5rem 2rem;
+  background: var(--cor-superficie);
+  border: 2px solid var(--cor-borda);
+  border-radius: 16px;
+}
+
+.tarefas-page .barra-acoes-tarefas {
+  padding: .75rem 1.25rem;
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: 12px;
+}
+
+.tarefas-page .btn-primary {
+  --bs-btn-bg: var(--cor-primaria);
+  --bs-btn-border-color: var(--cor-primaria);
+  --bs-btn-color: var(--cor-sobre-primaria);
+  --bs-btn-hover-bg: var(--cor-primaria-hover);
+  --bs-btn-hover-border-color: var(--cor-primaria-hover);
+  --bs-btn-hover-color: var(--cor-sobre-primaria);
+  --bs-btn-active-bg: var(--cor-primaria-hover);
+  --bs-btn-active-border-color: var(--cor-primaria-hover);
+  --bs-btn-active-color: var(--cor-sobre-primaria);
+}
+
+.tarefas-page .btn-outline-secondary {
+  --bs-btn-color: var(--cor-texto);
+  --bs-btn-border-color: var(--cor-borda);
+  --bs-btn-hover-bg: var(--cor-secundaria);
+  --bs-btn-hover-border-color: var(--cor-secundaria);
+  --bs-btn-hover-color: var(--cor-sobre-secundaria);
+  --bs-btn-active-bg: var(--cor-secundaria);
+  --bs-btn-active-border-color: var(--cor-secundaria);
+  --bs-btn-active-color: var(--cor-sobre-secundaria);
+}
+
+.tarefas-page .list-group {
+  --bs-list-group-bg: var(--cor-fundo);
+  --bs-list-group-color: var(--cor-texto);
+  --bs-list-group-border-color: var(--cor-borda);
+  --bs-list-group-action-color: var(--cor-texto);
+  --bs-list-group-action-hover-color: var(--cor-texto);
+  --bs-list-group-action-hover-bg: var(--cor-superficie);
+  --bs-list-group-action-active-bg: var(--cor-superficie);
+  --bs-list-group-action-active-color: var(--cor-texto);
+}
+
+.tarefas-page .tarefa-item {
+  gap: .75rem;
+  transition: background-color .15s ease;
+}
+
+.tarefas-page .tarefa-info {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.tarefas-page .tarefa-item:hover {
+  background-color: var(--cor-superficie);
+}
+
+.tarefas-page .seta-detalhes {
+  color: var(--cor-texto) !important;
+  opacity: .6;
+  transition: transform .15s ease, opacity .15s ease;
+}
+
+.tarefas-page .tarefa-item:hover .seta-detalhes {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+.tarefas-page .modal-content {
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  border: 1px solid var(--cor-borda);
+  border-radius: 16px;
+}
+
+.tarefas-page .modal-header,
+.tarefas-page .modal-footer {
+  border-color: var(--cor-borda);
+}
+
+.tarefas-page .form-control,
+.tarefas-page .form-select,
+.tarefas-page .input-group-text {
+  background-color: var(--cor-superficie);
+  color: var(--cor-texto);
+  border-color: var(--cor-borda);
+}
+
+.tarefas-page .form-control::placeholder {
+  color: var(--bs-secondary-color);
+}
+
+.tarefas-page .form-control:focus,
+.tarefas-page .form-select:focus {
+  background-color: var(--cor-superficie);
+  color: var(--cor-texto);
+  border-color: var(--cor-primaria);
+  box-shadow: 0 0 0 .2rem color-mix(in srgb, var(--cor-primaria) 30%, transparent);
+}
+
+.tarefas-page .dropdown-menu {
+  --bs-dropdown-bg: var(--cor-superficie);
+  --bs-dropdown-color: var(--cor-texto);
+  --bs-dropdown-link-color: var(--cor-texto);
+  --bs-dropdown-link-hover-color: var(--cor-texto);
+  --bs-dropdown-link-hover-bg: var(--cor-borda);
+  --bs-dropdown-border-color: var(--cor-borda);
+}
+
+.tarefas-page #detalheDescricao {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+[data-tema="escuro"] .tarefas-page,
+[data-tema="neon"] .tarefas-page {
+  color-scheme: dark;
+}
+
+[data-tema="escuro"] .tarefas-page .btn-close,
+[data-tema="neon"] .tarefas-page .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+@media (max-width: 767px) {
+  .tarefas-page main {
+    flex-direction: column;
+    height: auto;
+    min-height: 100dvh;
+    overflow: visible;
+  }
+
+  .tarefas-page .sidebar {
+    width: 100%;
+    border-right: 0;
+    border-bottom: 1px solid var(--cor-borda);
+    overflow: visible;
+  }
+
+  .tarefas-page .sidebar .nav {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    gap: .25rem;
+  }
+
+  .tarefas-page .tarefa-item {
+    flex-wrap: wrap;
+  }
+
+  .tarefas-page .tarefa-acoes {
+    margin-left: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tarefas-page .tarefa-item,
+  .tarefas-page .seta-detalhes {
+    transition: none;
+  }
+}

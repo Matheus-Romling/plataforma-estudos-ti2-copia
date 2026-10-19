@@ -1,0 +1,15 @@
+{
+  "name": "quorbe",
+  "version": "1.0.0",
+  "description": "Plataforma Quorbe com servidor Express integrado para páginas, autenticação, dados e loja de cosméticos.",
+  "main": "codigo/servidor.js",
+  "scripts": {
+    "start": "node ./codigo/servidor.js"
+  },
+  "keywords": [],
+  "author": "Ciência da Computação - PUC Minas",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
